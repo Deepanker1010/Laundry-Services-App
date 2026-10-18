@@ -4,34 +4,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laundry Booking Service</title>
+    <link href="dry-clean-logo.html" rel="import">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=support_agent" />
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            <div class="logo">My Logo</div>
+    <div class="container" id="home">
+        <nav class="nav" >
+            <div class="logo"><img src="img/logo.png" alt="Logo"></div>
             <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact Us</a>
+                <a href="#home">Home</a>
+                <a href="#service">Services</a>
+                <a href="#footer">About Us</a>
+                <a href="#footer">Contact Us</a>
             </div>
-            <div class="username">USERNAME</div>
-        </div>
-        <div class="container2">
-            <section class="section1">
-                <h1 id="heading1">Revitalize Your Clothes with Expert</h1> <h1 id="heading2">Laundry Services!</h1>
+            <div class="username"><ion-icon name="person-circle-outline"></ion-icon></div>
+        </nav>
+        <section class="container2">
+            <div class="section1">
+                <h1 id="heading1">Revitalize Your Clothes with Expert</h1>
+                <h1 id="heading2">Laundry Services!</h1>
                 <p class="para">from premium dry cleaning to swift wash and fold, we deliver care and convenience.
-                Schedule a pickup and rediscover the freshess of your clothes today!</p>
-                <button id="btn1">Book a service today! </button>
-            </section>
-            <section class="section2">
+                    Schedule a pickup and rediscover the freshess of your clothes today!</p>
+                <a href="#service"><button id="btn1">Book a service today! </button></a>
+            </div>
+            <div class="section2">
                 <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Laundry Image">
-            </section>
-        </div>
+                </>
+        </section>
     </div>
+    <section class="achievements">
+        <span>
+            <h1>Our Achievements</h1>
+        </span>
+        <span>
+            <h1>15+</h1>
+            <p>Laundry Services</p>
+        </span>
+        <span>
+            <h1>240+</h1>
+            <p>Happy Customers</p>
+        </span>
+        <span>
+            <h1>2+Yrs</h1>
+            <p>Laundry Services</p>
+        </span>
+    </section>
+    <section class="service" id="service">
+        <div class="booking-container">
+            <div class="left-div">
+                <h2 class="title">Our Services</h2>
+                <p class="subtitle">Click On The Add To Cart Button To Add The Services To Your Cart.</p>
+
+                <div class="services-list">
+                    <!-- Service Item 1 -->
+                    <div class="service-item">
+                        <div class="service-info">
+                            <span class="icon"><i class="fa-solid fa-hand-sparkles"></i></span>
+                            <span class="service-name">Dry Clean</span>
+                            <span class="service-price">$200.00</span>
+                        </div>
+                        <button class="btn btn-add info" id="dry-clean" name="Dry Clean" value="200.00">Add Item<i
+                                class="fa-regular fa-circle-plus"></i></button>
+                    </div>
+                    <!-- Service Item 2 -->
+                    <div class="service-item">
+                        <div class="service-info">
+                            <span class="icon">🧺</span>
+                            <span class="service-name">Wash & Fold</span>
+                            <span class="service-price">$100.00</span>
+                        </div>
+                        <button class="btn btn-add info" id="Wash&Fold" name="Wash & Fold" value="100.00">Add Item<i
+                                class="fa-regular fa-circle-plus"></i></button>
+                    </div>
+                    <!-- Service Item 3 -->
+                    <div class="service-item">
+
+                        <div class="service-info">
+                            <span class="icon">👔</span>
+                            <span class="service-name">Ironing</span>
+                            <span class="service-price">$30.00</span>
+                        </div>
+                        <button class="btn btn-add info" id="ironing" name="Ironing" value="30.00">Add Item<i
+                                class="fa-regular fa-circle-plus"></i></button>
+                    </div>
+
+                    <!-- Service Item 4 -->
+                    <div class="service-item">
+                        <div class="service-info">
+                            <span class="icon">✨</span>
+                            <span class="service-name">Stain Removal</span>
+                            <span class="service-price">$500.00</span>
+                        </div>
+                        <button class="btn btn-add info" id="stain-removal" name="Stain Removal" value="500.00">Add
+                            Item<i class="fa-regular fa-circle-plus"></i></button>
+                    </div>
+                    <!-- Service Item 5 -->
+                    <div class="service-item">
+                        <div class="service-info">
+                            <span class="icon">🧥</span>
+                            <span class="service-name">Leather & Suede Cleaning</span>
+                            <span class="service-price">$999.00</span>
+                        </div>
+                        <button class="btn btn-add info" id="leather&sude" name="Leather & Suede Cleaning"
+                            value="999.00">Add Item<i class="fa-regular fa-circle-plus"></i></button>
+                    </div>
+                    <!-- Service Item 6 -->
+                    <div class="service-item">
+                        <div class="service-info">
+                            <span class="icon">👗</span>
+                            <span class="service-name">Wedding Dress Cleaning</span>
+                            <span class="service-price">$2800.00</span>
+                        </div>
+                        <button class="btn btn-add info" id="wedingdress" name="Wedding Dress Cleaning"
+                            value="2800.00">Add Item<i class="fa-regular fa-circle-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="info-footer">
+                    <i class="fa-regular fa-circle-info"></i> Add items to the cart and book now.
+                </div>
+            </div>
+
+            <div class="right-div">
+                <!-- First Div: Cart Summary -->
+                <div class="cart-box">
+                    <h3 class="box-heading center-text">
+                        Added Items
+                    </h3>
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>S.NO.</th>
+                                <th>Service Name</th>
+                                <th>price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+
+                    </table>
+                    <div class="total-section">
+                        <span>Total Amount</span>
+                        <span class="total-price">0</span>
+                    </div>
+                </div>
+                <div class="booking-box">
+                    <h3 class="box-heading">Book Now</h3>
+                    <form action="" id="booking-form">
+                        <div class="form-group full-width">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email ID</label>
+                                <input type="email" id="email" placeholder="Enter your Email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Enter your Number" required />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-book">Book Now</button>
+                    </form>
+                    <div id="confimation-msg" class="confimation-msg"> Thank you For Booking the Service We will get
+                        back
+                        to you soon!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="qty-description">
+        <div class="container">
+            <div class="qty-svc">
+                <div class="premium-services">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px"
+                        fill="#434343">
+                        <path
+                            d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640H240v640Zm381.5-98.5Q680-317 680-400t-58.5-141.5Q563-600 480-600t-141.5 58.5Q280-483 280-400t58.5 141.5Q397-200 480-200t141.5-58.5ZM480-268q-26 0-50.5-9.5T386-306l188-188q19 19 28.5 43.5T612-400q0 55-38.5 93.5T480-268ZM320-680q17 0 28.5-11.5T360-720q0-17-11.5-28.5T320-760q-17 0-28.5 11.5T280-720q0 17 11.5 28.5T320-680Zm148.5-11.5Q480-703 480-720t-11.5-28.5Q457-760 440-760t-28.5 11.5Q400-737 400-720t11.5 28.5Q423-680 440-680t28.5-11.5ZM240-160v-640 640Z" />
+                    </svg>
+                    <h3>Premium Services</h3>
+                    <p>Elevate your wardrobe with our meticulous dy cleaning, ensuring garments look and feel as good as
+                        new.</p>
+                </div>
+
+                <div class="quick-support">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#434343">
+                        <path
+                            d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440ZM331.5-411.5Q320-423 320-440t11.5-28.5Q343-480 360-480t28.5 11.5Q400-457 400-440t-11.5 28.5Q377-400 360-400t-28.5-11.5Zm240 0Q560-423 560-440t11.5-28.5Q583-480 600-480t28.5 11.5Q640-457 640-440t-11.5 28.5Q617-400 600-400t-28.5-11.5ZM241-462q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z" />
+                    </svg>
+                    <h3>Quick Support</h3>
+                    <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry -free
+                    </p>
+                </div>
+
+                <div class="delivery">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#434343">
+                        <path
+                            d="M195-195q-35-35-35-85H60l18-80h113q17-19 40-29.5t49-10.5q26 0 49 10.5t40 29.5h167l84-360H182l4-17q6-28 27.5-45.5T264-800h456l-37 160h117l120 160-40 200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H400q0 50-35 85t-85 35q-50 0-85-35Zm442-245h193l4-21-74-99h-95l-28 120Zm-19-273 2-7-84 360 2-7 34-146 46-200ZM20-427l20-80h220l-20 80H20Zm80-146 20-80h260l-20 80H100Zm180 333q17 0 28.5-11.5T320-280q0-17-11.5-28.5T280-320q-17 0-28.5 11.5T240-280q0 17 11.5 28.5T280-240Zm400 0q17 0 28.5-11.5T720-280q0-17-11.5-28.5T680-320q-17 0-28.5 11.5T640-280q0 17 11.5 28.5T680-240Z" />
+                    </svg>
+                    <h3>Hassle Free Delivery</h3>
+                    <p>Enojy seamless service with our convenient and delivery options, tailored to your shedule.</p>
+                </div>
+
+                <div class="affordable-prices">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#434343">
+                        <path
+                            d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z" />
+                    </svg>
+                    <h3>Affordable Prices</h3>
+                    <p>Exprience exceptional care wihout breaking the bank -our affordable price make laundry day
+                        stress-free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Subscription">
+        <div class="container">
+            <div class="subscribe">
+                <h1>Subscribe to our<br> newsletter.</h1>
+                <div class="subscribe-form">
+                    <input type="text" placeholder="Full name">
+                    <input type="text" placeholder="Email">
+                    <br><button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+                <div class="footer-links">
+                    <span>
+                    <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+                    <h4>About US</h4>
+                    <p>Reinforces brand identity<br> and provides a visual anchor for users.</p>
+                </span>
+                <span>
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#">About Us
+                        </a></li>
+                        <li><a href="#">Contact Us
+                        </a></li>
+                        <li><a href="">Privacy policy
+                        </a></li>
+                        <li><a href="">Terms of use
+                        </a></li>
+                        <li><a href="">Refund policy
+                        </a></li>
+                    </ul>
+                </span>
+                <span>
+                    <h4>Contact</h4>
+                    <p>mail@site.com</p>
+                    <p>+91 91243 56780</p>
+                </span>
+                <span>
+                    <h4>Follow Us</h4>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
 
 </html>
