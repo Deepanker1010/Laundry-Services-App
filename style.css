@@ -123,7 +123,6 @@
 
         .bookings {
             margin-top: 10px;
-            height: 90vh;
             max-width: 1200px;
             margin: 0 auto;
             padding: 10vh;
@@ -139,71 +138,19 @@
         }
 
         .additem {
-            height: 50vh;
             width: 50%;
         }
 
         .book {
-            height: 50vh;
             width: 50%;
         }
 
-        @media (max-width: 768px) {
-            body {
-                overflow: auto;
-                flex-wrap: wrap;
-            }
-
-            .container {
-                height: auto;
-            }
-
-            .container2 {
-                flex-direction: column;
-                height: auto;
-                overflow: visible;
-            }
-
-            .section1,
-            .section2 {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .nav {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .menu a {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                padding: 1vh 10px;
-            }
-
-            .username {
-                font-size: 2vh;
-                padding: 1.5vh 10px;
-            }
-
-            .container2 {
-                margin-top: 20px;
-            }
-
-            .section1 #heading1 {
-                font-size: 5vh;
-            }
-
-            .section1 #heading2 {
-                font-size: 4vh;
-            }
-
-            .section1 p {
-                font-size: 2.5vh;
-            }
+        .service,
+        .book,
+        .additem,
+        .bookings {
+            height: auto;
+            min-height: fit-content;
         }
 
         .service {
@@ -211,7 +158,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             padding: 20px;
         }
 
@@ -228,8 +174,6 @@
             border-radius: 16px;
             padding: 30px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-            /* display: flex;
-            flex-direction: column; */
         }
 
         .title {
@@ -261,7 +205,6 @@
 
         .service-info {
             display: flex;
-            /* align-items: center; */
             gap: 10px;
         }
 
@@ -312,7 +255,6 @@
             margin-top: 30px;
             font-size: 13px;
             color: #5a67d8;
-            /* align-items: center; */
             gap: 8px;
         }
 
@@ -365,7 +307,6 @@
         .total-section {
             display: flex;
             justify-content: space-between;
-            /* align-items: center; */
             margin-top: 10px;
             padding: 5px 50px;
             font-weight: 700;
@@ -442,12 +383,6 @@
             border-radius: 6px;
             text-align: center;
             font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            .booking-container {
-                flex-direction: column;
-            }
         }
 
         .qty-svc {
@@ -575,4 +510,196 @@
         .footer-links li a {
             text-decoration: none;
             color: #718096;
+        }
+
+        /* ------------------------------------------------------------------------ */
+
+        @media screen and (max-width: 768px) {
+
+            .nav {
+                padding: 10px;
+            }
+
+            .menu a {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            .username {
+                font-size: 24px;
+            }
+
+            .container2 {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+
+            .section1,
+            .section2 {
+                width: 100%;
+            }
+
+            .section2 img {
+                height: auto;
+                max-height: 400px;
+            }
+
+            .achievements {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .booking-container {
+                flex-direction: column;
+            }
+
+            .left-div,
+            .right-div {
+                width: 100%;
+            }
+
+            .qty-svc {
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+
+            .premium-services,
+            .quick-support,
+            .delivery,
+            .affordable-prices {
+                width: 45%;
+            }
+
+            .subscribe {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                gap: 30px;
+                margin: 2rem;
+            }
+        }
+
+        /* ================================================== */
+        
+        @media screen and (max-width: 480px) {
+
+            .nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .logo img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .menu a {
+                text-align: center;
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            .username {
+                font-size: 18px;
+            }
+
+            .container2 {
+                margin-top: 180px;
+            }
+
+            .section1 #heading1 {
+                font-size: 36px;
+            }
+
+            .section1 #heading2 {
+                font-size: 28px;
+            }
+
+            .section1 p {
+                font-size: 16px;
+            }
+
+            .section1 #btn1 {
+                width: 100%;
+            }
+
+            .achievements {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .booking-container {
+                gap: 15px;
+            }
+
+            .left-div,
+            .cart-box,
+            .booking-box {
+                padding: 15px;
+            }
+
+            .form-row {
+                flex-direction: column;
+            }
+
+            .qty-svc {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .premium-services,
+            .quick-support,
+            .delivery,
+            .affordable-prices {
+                width: 100%;
+            }
+
+            .premium-services svg,
+            .quick-support svg,
+            .delivery svg,
+            .affordable-prices svg {
+                width: 100px;
+                height: 100px;
+            }
+
+            .subscribe h1 {
+                font-size: 2rem;
+            }
+
+            .subscribe-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subscribe-form input {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            .subscribe-form button {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                text-align: center;
+                margin: 1rem;
+            }
+
+            .footer-links div {
+                width: 100%;
+            }
         }
