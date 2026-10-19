@@ -46,10 +46,12 @@ function updateSerialNumbers() {
     });
 };
 
-const bookBtn = document.querySelector('.btn-book');
+const form = document.querySelector('#booking-form');
 const confirmMsg = document.getElementById('confimation-msg');
 
-bookBtn.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
+    if(form.checkValidity()){
     confirmMsg.classList.add('show');
+    }
 })
