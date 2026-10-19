@@ -56,4 +56,5 @@ form.addEventListener('submit', (e) => {
         return;
     }
     confirmMsg.classList.add('show');
+    form.reset();
 })
