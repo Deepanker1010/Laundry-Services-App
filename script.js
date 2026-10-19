@@ -51,7 +51,7 @@ const confirmMsg = document.getElementById('confimation-msg');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    if(form.checkValidity()){
+    if(!form.checkValidity()){
         form.reportValidity();
         return;
     }
